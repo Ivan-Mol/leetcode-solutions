@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+
 public class Solution {
 
     //    Two Sums example:
@@ -129,5 +134,65 @@ public class Solution {
             res.append(currLetter);
         }
         return res.toString();
+    }
+
+    //Valid Parentheses
+//    Input: s = "()[]{}"
+//    Output: true
+    public static boolean isValid(String s) {
+        ArrayList<Character> chars = new ArrayList<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i)=='('||s.charAt(i)=='{'||s.charAt(i)=='['){
+                chars.add(s.charAt(i));
+            }else {
+                if (chars.isEmpty()){
+                    return false;
+                }
+                if (s.charAt(i)==')'&&(chars.get(chars.size()-1) != '(')){
+                    return false;
+                }
+                if (s.charAt(i)=='}'&&(chars.get(chars.size()-1) != '(')){
+                    return false;
+                }
+                if (s.charAt(i)==']'&&(chars.get(chars.size()-1) != '(')){
+                    return false;
+                }
+                chars.remove(chars.size()-1);
+            }
+        }
+        return chars.isEmpty();
+    }
+
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null){
+            return list2;
+        }
+        if (list2 == null){
+            return list1;
+        }
+        ListNode nextNode1 = list1.next;
+        ListNode nextNode2 = list2.next;
+        if ( list1.val<list2.val)
+        {
+            list1.next = mergeTwoLists(nextNode1, list2);
+            return list1;
+        }
+        list2.next = mergeTwoLists(list1, nextNode2);
+        return list2;
+    }
+//    Input: nums = [1,1,2]
+//    Output: 2, nums = [1,2,_]
+//    Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
+//    It does not matter what you leave beyond the returned k (hence they are underscores).
+    public static int removeDuplicates(int[] nums) {
+        int counter = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i]!=nums[i-1]&&nums[i]>nums[i-1]){
+                nums[counter]=nums[i];
+                counter++;
+            }
+        }
+        System.out.println(Arrays.toString(nums));
+        return counter;
     }
 }
