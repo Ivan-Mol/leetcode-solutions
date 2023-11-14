@@ -2,8 +2,8 @@ package completed;
 
 public interface LongestCommonPrefix {
     //    Longest Common Prefix
-//    Input: strs = ["flower","flow","flight"]
-//    Output: "fl"
+    //    Input: strs = ["flower","flow","flight"]
+    //    Output: "fl"
      static String longestCommonPrefix(String[] strs) {
         StringBuilder res = new StringBuilder();
         if (strs == null || strs.length == 0) {
