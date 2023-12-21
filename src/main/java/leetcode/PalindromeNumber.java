@@ -1,4 +1,4 @@
-package completed;
+package leetcode;
 
 public interface PalindromeNumber {
     //Palindrome Number example:

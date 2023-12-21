@@ -1,6 +1,4 @@
-package completed;
-
-import java.util.Arrays;
+package leetcode;
 
 //Example 1:
 //

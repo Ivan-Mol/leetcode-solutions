@@ -1,4 +1,4 @@
-package completed;
+package leetcode;
 
 public interface RomanToInt {
     //Roman to Integer example:

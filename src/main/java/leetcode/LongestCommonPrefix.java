@@ -1,4 +1,4 @@
-package completed;
+package leetcode;
 
 public interface LongestCommonPrefix {
     //    Longest Common Prefix

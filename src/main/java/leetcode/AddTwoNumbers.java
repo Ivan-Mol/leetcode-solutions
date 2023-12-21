@@ -1,4 +1,4 @@
-package completed;
+package leetcode;
 
 import utils.ListNode;
 
