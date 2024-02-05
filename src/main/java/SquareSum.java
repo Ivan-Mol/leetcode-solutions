@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 //Complete the square sum function so that it squares each number passed into it and then sums the results together.
 //

@@ -1,7 +1,5 @@
 package codewars;
 
-import java.util.Arrays;
-
 //strarr = ["tree", "foling", "trashy", "blue", "abcdef", "uvwxyz"], k = 2
 //
 //Concatenate the consecutive strings of strarr by 2, we get:

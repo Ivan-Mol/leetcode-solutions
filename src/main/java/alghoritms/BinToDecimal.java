@@ -1,7 +1,5 @@
 package alghoritms;
 
-import java.util.Arrays;
-
 public interface BinToDecimal {
     static int binToDecimal(String inp) {
         int prevResult = 0;

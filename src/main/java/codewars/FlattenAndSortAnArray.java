@@ -1,8 +1,6 @@
 package codewars;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
 public interface FlattenAndSortAnArray {
     static int[] flattenAndSort(int[][] array) {
