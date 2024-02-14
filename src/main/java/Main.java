@@ -1,7 +1,5 @@
 import alghoritms.BubbleSort;
-import codewars.HumanReadableDurationFormat;
-import codewars.HumanReadableTime;
-import codewars.PigLatin;
+import codewars.*;
 import sun.reflect.ReflectionFactory;
 
 import java.lang.reflect.Field;
@@ -11,5 +9,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println(HumanReadableDurationFormat.formatDuration(4947600));    }
+        System.out.println(FindTheMissingLetter.findMissingLetter(new char[]{'O','Q','R','S'}));
+    }
 }
