@@ -1,6 +1,6 @@
 package codewars;
 
-public class TrafficLights {
+public interface TrafficLights {
 
     public static String updateLight(String current) {
 

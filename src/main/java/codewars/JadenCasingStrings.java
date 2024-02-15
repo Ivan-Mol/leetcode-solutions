@@ -3,7 +3,7 @@ package codewars;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class JadenCasingStrings {
+public interface JadenCasingStrings {
 
     public static String toJadenCase(String phrase) {
         if (phrase==null||phrase.isEmpty()) { return null; }

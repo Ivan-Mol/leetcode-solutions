@@ -4,8 +4,8 @@ package codewars;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SumOfSequence {
-    public static int sequenceSum(int start, int end, int step) {
+public interface SumOfSequence {
+     static int sequenceSum(int start, int end, int step) {
         // write your code here
         List<Integer> nums = new ArrayList<>();
         for (int i = start; i <= end ; i=i+step) {

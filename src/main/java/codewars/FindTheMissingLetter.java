@@ -2,7 +2,7 @@ package codewars;
 
 import java.util.Arrays;
 
-public class FindTheMissingLetter
+public interface FindTheMissingLetter
 {
     public static char findMissingLetter(char[] array)
     {

@@ -9,6 +9,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println(FindTheMissingLetter.findMissingLetter(new char[]{'O','Q','R','S'}));
+        System.out.println(DigitalRoot.digital_root(942));
     }
 }
