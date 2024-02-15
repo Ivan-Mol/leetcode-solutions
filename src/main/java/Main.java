@@ -1,14 +1,11 @@
-import alghoritms.BubbleSort;
-import codewars.*;
-import sun.reflect.ReflectionFactory;
+import codewars.RemoveTheMinimum;
 
-import java.lang.reflect.Field;
-import java.util.*;
+import java.util.Arrays;
 
 public class Main {
-
+    static int a = 0;
 
     public static void main(String[] args) {
-        System.out.println(DigitalRoot.digital_root(942));
+        System.out.println(Arrays.toString(RemoveTheMinimum.removeSmallest(new int[]{2, 2, 1, 2, 1})));
     }
 }
