@@ -3,7 +3,7 @@ package codewars;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class RemoveTheMinimum {
+public interface RemoveTheMinimum {
     public static int[] removeSmallest(int[] numbers) {
         int min = Arrays.stream(numbers).min().getAsInt();
         int counter = 0;
