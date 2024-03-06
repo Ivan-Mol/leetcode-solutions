@@ -1,11 +1,7 @@
-import leetcode.RemoveDuplicatesFromSortedArray;
-import leetcode.Sqrt;
-import model.ListNode;
+import leetcode.SingleNumber;
 
 public class Main {
-
-
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1,new ListNode(1,new ListNode(3)));
-        System.out.println(RemoveDuplicatesFromSortedArray.deleteDuplicates(listNode).toString());    }
+        System.out.println(SingleNumber.singleNumber(new int[]{4,2,1,2,1}));
+    }
 }
