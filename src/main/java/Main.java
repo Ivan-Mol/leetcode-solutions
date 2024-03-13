@@ -1,8 +1,12 @@
+import leetcode.MaximumGap;
+import leetcode.PowerOfTwo;
 import leetcode.ReverseLinkedList;
 import model.ListNode;
 
 public class Main {
+    static int n = 16;
+
     public static void main(String[] args) {
-        System.out.println(ReverseLinkedList.reverseList(new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4,new ListNode(5)))))));
+        System.out.println(MaximumGap.maximumGap(new int[]{3,6,9,1}));
     }
 }
