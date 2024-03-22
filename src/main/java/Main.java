@@ -1,9 +1,7 @@
-import leetcode.ContainsDuplicateII;
+import leetcode.*;
 
 public class Main {
-    static int n = 16;
-
     public static void main(String[] args) {
-        System.out.println(ContainsDuplicateII.containsNearbyDuplicate(new int[]{1, 2, 3, 1, 2, 3}, 2));
+        System.out.println(FindTheIndexOfTheFirstOccurrence.strStr("sadbutsad", "sad"));
     }
 }

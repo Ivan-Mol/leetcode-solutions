@@ -1,10 +1,12 @@
 package leetcode;
 
+import java.util.Arrays;
+
 public interface LongestCommonPrefix {
     //    Longest Common Prefix
     //    Input: strs = ["flower","flow","flight"]
     //    Output: "fl"
-     static String longestCommonPrefix(String[] strs) {
+    static String longestCommonPrefix(String[] strs) {
         StringBuilder res = new StringBuilder();
         if (strs == null || strs.length == 0) {
             return res.toString();
@@ -26,5 +28,25 @@ public interface LongestCommonPrefix {
             res.append(currLetter);
         }
         return res.toString();
+    }
+
+    //flower","flow","flight
+    static String longestCommonPrefix2(String[] strs) {
+        StringBuilder result = new StringBuilder();
+        String shortestWord = strs[0];
+        for (int i = 1; i < strs.length; i++) {
+            if (strs[i].length()<shortestWord.length()){
+                shortestWord = strs[i];
+            }
+        }
+        for (int i = 0; i < shortestWord.length(); i++) {
+            for (int j = 0; j < strs.length; j++) {
+                if (shortestWord.charAt(i) != strs[j].charAt(i)) {
+                    return result.toString();
+                }
+            }
+            result.append(shortestWord.charAt(i));
+        }
+        return result.toString();
     }
 }
