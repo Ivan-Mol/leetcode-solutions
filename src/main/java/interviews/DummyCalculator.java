@@ -5,7 +5,6 @@ import java.util.Arrays;
 public interface DummyCalculator {
      static int dummyCalculator(String expr){
         String[] arr = expr.split("\\+");
-         System.out.println(Arrays.toString(arr));
         int res = 0;
         for (String s : arr) {
             if (arr.length > 1) {
