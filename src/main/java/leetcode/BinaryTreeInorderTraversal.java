@@ -20,7 +20,7 @@ import java.util.List;
  *     }
  * }
  */
-interface Solution {
+interface BinaryTreeInorderTraversal {
     List<Integer> result = new ArrayList<>();
     static List<Integer> inorderTraversal(TreeNode root) {
         TreeNode node = root;

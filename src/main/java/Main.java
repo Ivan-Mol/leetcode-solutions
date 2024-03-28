@@ -1,11 +1,12 @@
-import interviews.Flowers;
+import leetcode.ExcelSheetColumnTitle;
+import leetcode.TwoSums;
 
-import java.util.concurrent.Flow;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         long startMillis = System.nanoTime();
-        System.out.println(Flowers.canPlaceFlowers(new int[]{0,0,0},2));
+        System.out.println(ExcelSheetColumnTitle.convertToTitle(0));
         //System.out.println(System.nanoTime() - startMillis);
     }
 }
