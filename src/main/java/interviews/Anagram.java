@@ -2,7 +2,7 @@ package interviews;
 
 import java.util.Arrays;
 
-public interface Anagram {
+public class Anagram {
     static boolean isAnagram(String s, String t) {
         if (s.length()!=t.length()){
             return false;

@@ -13,7 +13,6 @@ package leetcode;
 //Output: "10101"
 public interface AddBinary {
     static String addBinary(String a, String b) {
-
         return null;
     }
 }
