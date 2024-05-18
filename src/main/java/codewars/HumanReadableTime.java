@@ -1,8 +1,6 @@
 package codewars;
 
-import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Date;
 
 public interface HumanReadableTime {
     static String makeReadable(int seconds) {

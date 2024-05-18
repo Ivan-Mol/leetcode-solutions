@@ -5,7 +5,7 @@ public interface BinToDecimal {
         int prevResult = 0;
         for (int i = 0; i < inp.length(); i++) {
             int charFromString = Character.getNumericValue(inp.charAt(i));
-            int num = (prevResult*2+charFromString);
+            int num = (prevResult * 2 + charFromString);
             prevResult = num;
         }
         return prevResult;

@@ -14,7 +14,7 @@ public interface MajorityElementII {
                     counter++;
                 }
             }
-            if (counter > max&&!res.contains(nums[i])) {
+            if (counter > max && !res.contains(nums[i])) {
                 res.add(nums[i]);
             }
             counter = 0;

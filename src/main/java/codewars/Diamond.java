@@ -9,7 +9,7 @@ public interface Diamond {
             }
             stringBuilder.append("\n");
         }
-        for (int i = n-1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
             for (int j = i; j > 0; j--) {
                 stringBuilder.append("*");
             }

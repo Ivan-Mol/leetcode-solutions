@@ -1,4 +1,5 @@
 package leetcode;
+
 //sadbutsad
 public interface FindTheIndexOfTheFirstOccurrence {
     static int strStr(String haystack, String needle) {

@@ -1,6 +1,5 @@
 package codewars;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public interface RemoveTheMinimum {

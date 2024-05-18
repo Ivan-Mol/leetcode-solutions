@@ -1,10 +1,5 @@
 package codewars;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Stream;
-
 //4,5,7,5,4,8
 //res = 15
 public interface SumOfArraySingles {

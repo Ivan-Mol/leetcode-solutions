@@ -1,7 +1,5 @@
 package codewars;
 
-import java.util.Arrays;
-
 public interface HighestAndLowest {
     static String highAndLow(String numbers) {
         String[] nums = numbers.split(" ");

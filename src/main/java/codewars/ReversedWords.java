@@ -1,13 +1,13 @@
 package codewars;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public interface ReversedWords {
-    public static String reverseWords(String str){
+    public static String reverseWords(String str) {
         List<String> strings = Arrays.asList(str.split(" "));
         Collections.reverse(strings);
-        return String.join(" ",strings );
+        return String.join(" ", strings);
     }
 }

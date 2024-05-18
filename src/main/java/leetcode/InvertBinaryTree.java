@@ -9,7 +9,7 @@ public interface InvertBinaryTree {
     }
 
     private static void changeNodes(TreeNode node) {
-        if (node==null){
+        if (node == null) {
             return;
         }
         TreeNode temp = node.left;

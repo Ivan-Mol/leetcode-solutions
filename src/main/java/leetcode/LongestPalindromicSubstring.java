@@ -13,18 +13,18 @@ public interface LongestPalindromicSubstring {
     static String longestPalindrome(String s) {
         char[] arr = s.toCharArray();
         int frst = 0;
-        int lst = arr.length-1;
-        while (frst<=lst){
-            if (arr[frst]!=arr[lst]){
-                arr[frst]=  ' ';
+        int lst = arr.length - 1;
+        while (frst <= lst) {
+            if (arr[frst] != arr[lst]) {
+                arr[frst] = ' ';
                 arr[lst] = ' ';
             }
             frst++;
             lst--;
         }
         StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < arr.length ; i++) {
-            if (arr[i]!=' '){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != ' ') {
                 builder.append(arr[i]);
             }
         }

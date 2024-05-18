@@ -1,11 +1,8 @@
 package codewars;
 
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
 public interface CountOddNumbersBellowN {
-     static int oddCount(int n) {
-         return n/2;
+    static int oddCount(int n) {
+        return n / 2;
     }
 
 }

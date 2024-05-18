@@ -7,14 +7,14 @@ public interface RemoveDuplicatesFromSortedArrayII {
         int index = 1;
         int counter = 1;
 
-        for(int i=1; i < nums.length; i++){
-            if (nums[i] == nums[i-1]){
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[i - 1]) {
                 counter++;
-            }else{
+            } else {
                 counter = 1;
             }
 
-            if (counter <= 2){
+            if (counter <= 2) {
                 nums[index] = nums[i];
                 index++;
             }

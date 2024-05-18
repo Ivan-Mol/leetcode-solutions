@@ -14,10 +14,10 @@ public interface MedianOfTwoSortedArrays {
             list.add(j);
         }
         Collections.sort(list);
-        if (list.size()%2!=0){
-            return (float) list.get(list.size()/2);
-        }else {
-            return ((float) list.get(list.size()/2-1) + (float) list.get(list.size()/2))/2;
+        if (list.size() % 2 != 0) {
+            return (float) list.get(list.size() / 2);
+        } else {
+            return ((float) list.get(list.size() / 2 - 1) + (float) list.get(list.size() / 2)) / 2;
         }
     }
 }

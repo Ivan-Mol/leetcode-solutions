@@ -1,7 +1,5 @@
 package codewars;
 
-import java.time.LocalDate;
-
 public interface PersistentBurger {
     public static int persistence(long n) {
         int count = 0;
@@ -13,6 +11,7 @@ public interface PersistentBurger {
 
         return count;
     }
+
     public static long getMultiplyOfDigits(long n) {
         int result = (int) n % 10;
 

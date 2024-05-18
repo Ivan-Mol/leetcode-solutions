@@ -1,7 +1,10 @@
 package interviews;
 
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
 public class StreamExampleClass {
@@ -28,9 +31,9 @@ public class StreamExampleClass {
 
 
     public static void main(String[] args) {
-        Worker worker = pojos.stream().filter(p->p.getName().equals("Bob")).findFirst().map(p->new Worker(p.getName(), p.getPosition())).get();
-        Map<String,PojoExample> mapOfPojos = pojos.stream().collect(Collectors.toMap(PojoExample::getName, p->p));
-        StringJoiner stringJoiner = new StringJoiner(",","start","end");
+        Worker worker = pojos.stream().filter(p -> p.getName().equals("Bob")).findFirst().map(p -> new Worker(p.getName(), p.getPosition())).get();
+        Map<String, PojoExample> mapOfPojos = pojos.stream().collect(Collectors.toMap(PojoExample::getName, p -> p));
+        StringJoiner stringJoiner = new StringJoiner(",", "start", "end");
         stringJoiner.add(mapOfPojos.values().toString());
         System.out.println(stringJoiner);
         LinkedList<String> linkedList = new LinkedList<>();

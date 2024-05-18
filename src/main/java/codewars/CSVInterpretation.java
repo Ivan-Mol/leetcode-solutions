@@ -1,7 +1,5 @@
 package codewars;
 
-import java.util.Arrays;
-
 public interface CSVInterpretation {
     static String toCsvText(int[][] array) {
         StringBuilder builder = new StringBuilder();
@@ -10,10 +8,10 @@ public interface CSVInterpretation {
                 builder.append(anInt);
                 builder.append(",");
             }
-            builder.deleteCharAt(builder.length()-1);
+            builder.deleteCharAt(builder.length() - 1);
             builder.append("\n");
         }
-        builder.deleteCharAt(builder.length()-1);
+        builder.deleteCharAt(builder.length() - 1);
         return builder.toString();
     }
 }

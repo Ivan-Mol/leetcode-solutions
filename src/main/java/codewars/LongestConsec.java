@@ -23,14 +23,14 @@ public interface LongestConsec {
         // your code
         String result = "";
         StringBuilder words = new StringBuilder();
-        for (int i = 0; i < strarr.length-(k-1); i++) {
+        for (int i = 0; i < strarr.length - (k - 1); i++) {
             for (int j = 0; j < k; j++) {
-                words.append(strarr[i+j]);
+                words.append(strarr[i + j]);
             }
-            if (words.toString().length()>result.length()){
-                result= words.toString();
+            if (words.toString().length() > result.length()) {
+                result = words.toString();
             }
-            words.delete(0,words.length());
+            words.delete(0, words.length());
         }
 
         return result;

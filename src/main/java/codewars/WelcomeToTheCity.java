@@ -1,14 +1,14 @@
 package codewars;
 
 public interface WelcomeToTheCity {
-    static String sayHello(String [] name, String city, String state) {
+    static String sayHello(String[] name, String city, String state) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Hello, ");
         for (int i = 0; i < name.length; i++) {
             stringBuilder.append(name[i]);
             stringBuilder.append(" ");
         }
-        stringBuilder.deleteCharAt(stringBuilder.length()-1);
+        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
         stringBuilder.append("! Welcome to ");
         stringBuilder.append(city);
         stringBuilder.append(", ");
@@ -17,6 +17,6 @@ public interface WelcomeToTheCity {
         return stringBuilder.toString();
     }
 
-        //Hello, John Smith! Welcome to Phoenix, Arizona!
-        //['John', 'Smith'], 'Phoenix', 'Arizona'
+    //Hello, John Smith! Welcome to Phoenix, Arizona!
+    //['John', 'Smith'], 'Phoenix', 'Arizona'
 }

@@ -8,22 +8,22 @@ public interface AddTwoNumbers {
         ListNode nodeOne = l1, nodeTwo = l2, currentNode = result;
         int tensKeeper = 0;
 
-        while (nodeOne != null || nodeTwo != null){
-            int nodeOneValue = (nodeOne == null)? 0 : nodeOne.val;
-            int nodeTwoValue = (nodeTwo == null)? 0 : nodeTwo.val;
+        while (nodeOne != null || nodeTwo != null) {
+            int nodeOneValue = (nodeOne == null) ? 0 : nodeOne.val;
+            int nodeTwoValue = (nodeTwo == null) ? 0 : nodeTwo.val;
 
-            int sum = nodeOneValue+nodeTwoValue+tensKeeper;
-            tensKeeper = sum/10;
-            currentNode.next = new ListNode(sum%10);
+            int sum = nodeOneValue + nodeTwoValue + tensKeeper;
+            tensKeeper = sum / 10;
+            currentNode.next = new ListNode(sum % 10);
             currentNode = currentNode.next;
-            if (nodeOne!=null){
+            if (nodeOne != null) {
                 nodeOne = nodeOne.next;
             }
-            if (nodeTwo!=null){
+            if (nodeTwo != null) {
                 nodeTwo = nodeTwo.next;
             }
         }
-        if (tensKeeper>0){
+        if (tensKeeper > 0) {
             currentNode.next = new ListNode(tensKeeper);
         }
         return result.next;

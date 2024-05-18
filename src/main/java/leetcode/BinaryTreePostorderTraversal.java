@@ -9,13 +9,14 @@ import java.util.List;
 public interface BinaryTreePostorderTraversal {
     static List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> ints = new ArrayList<>();
-        addNums(root,ints);
+        addNums(root, ints);
         return ints;
     }
-    static void addNums(TreeNode root, List<Integer> ints){
-        if(root!=null){
-            addNums(root.left,ints);
-            addNums(root.right,ints);
+
+    static void addNums(TreeNode root, List<Integer> ints) {
+        if (root != null) {
+            addNums(root.left, ints);
+            addNums(root.right, ints);
             ints.add(root.val);
         }
     }

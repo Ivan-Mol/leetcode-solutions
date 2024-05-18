@@ -1,9 +1,7 @@
 package interviews;
 
-import java.util.Arrays;
-
 public interface DummyCalculator {
-     static int dummyCalculator(String expr){
+    static int dummyCalculator(String expr) {
         String[] arr = expr.split("\\+");
         int res = 0;
         for (String s : arr) {

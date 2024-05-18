@@ -1,7 +1,5 @@
 package leetcode;
 
-import java.util.Arrays;
-
 public interface LongestCommonPrefix {
     //    Longest Common Prefix
     //    Input: strs = ["flower","flow","flight"]
@@ -35,7 +33,7 @@ public interface LongestCommonPrefix {
         StringBuilder result = new StringBuilder();
         String shortestWord = strs[0];
         for (int i = 1; i < strs.length; i++) {
-            if (strs[i].length()<shortestWord.length()){
+            if (strs[i].length() < shortestWord.length()) {
                 shortestWord = strs[i];
             }
         }

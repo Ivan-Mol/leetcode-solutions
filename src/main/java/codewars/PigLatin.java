@@ -1,7 +1,5 @@
 package codewars;
 
-import java.util.Arrays;
-
 //pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
 //pigIt('Hello world !');     // elloHay orldway !
 public interface PigLatin {
@@ -12,13 +10,13 @@ public interface PigLatin {
             String word = words[i];
             boolean isPunctuationHere = false;
             for (int j = 0; j < word.length(); j++) {
-                if (!Character.isAlphabetic(word.charAt(j))){
+                if (!Character.isAlphabetic(word.charAt(j))) {
                     isPunctuationHere = true;
                 }
             }
-            if (isPunctuationHere){
+            if (isPunctuationHere) {
                 builder.append(word);
-            }else {
+            } else {
                 builder.append(word.substring(1))
                         .append(word.charAt(0))
                         .append("ay ");

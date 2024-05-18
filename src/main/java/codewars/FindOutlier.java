@@ -5,21 +5,21 @@ public interface FindOutlier {
         int oddCounter = 0;
         int evenCounter = 0;
         for (int i = 0; i < 3; i++) {
-            if (integers[i]%2==0){
+            if (integers[i] % 2 == 0) {
                 evenCounter++;
-            }else {
+            } else {
                 oddCounter++;
             }
         }
-        if (evenCounter>oddCounter){
+        if (evenCounter > oddCounter) {
             for (int i = 0; i < integers.length; i++) {
-                if (integers[i]%2!=0){
+                if (integers[i] % 2 != 0) {
                     return integers[i];
                 }
             }
-        }else {
+        } else {
             for (int i = 0; i < integers.length; i++) {
-                if (integers[i]%2==0){
+                if (integers[i] % 2 == 0) {
                     return integers[i];
                 }
             }

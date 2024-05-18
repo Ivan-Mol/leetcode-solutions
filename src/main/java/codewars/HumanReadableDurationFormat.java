@@ -1,7 +1,6 @@
 package codewars;
 
 import java.time.Duration;
-import java.time.Period;
 
 public interface HumanReadableDurationFormat {
 

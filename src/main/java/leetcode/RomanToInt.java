@@ -13,7 +13,7 @@ public interface RomanToInt {
 //    C             100
 //    D             500
 //    M             1000
-     static int romanToInt(String s) {
+    static int romanToInt(String s) {
         char[] chars = s.toCharArray();
         int res = 0;
         for (int i = chars.length - 1; i >= 0; i--) {

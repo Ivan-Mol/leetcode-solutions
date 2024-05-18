@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface SumOfSequence {
-     static int sequenceSum(int start, int end, int step) {
+    static int sequenceSum(int start, int end, int step) {
         // write your code here
         List<Integer> nums = new ArrayList<>();
-        for (int i = start; i <= end ; i=i+step) {
+        for (int i = start; i <= end; i = i + step) {
             nums.add(i);
         }
         int sum = 0;

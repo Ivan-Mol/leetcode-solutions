@@ -7,7 +7,7 @@ public interface ValidParentheses {
     //Valid Parentheses
 //    Input: s = "()[]{}"
 //    Output: true
-     static boolean isValid(String s) {
+    static boolean isValid(String s) {
         ArrayList<Character> chars = new ArrayList<>();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {

@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public interface HelpTheBookseller {
-     static String stockSummary(String[] lstOfArt, String[] lstOf1stLetter) {
-        if (lstOfArt.length==0||lstOf1stLetter.length==0){
+    static String stockSummary(String[] lstOfArt, String[] lstOf1stLetter) {
+        if (lstOfArt.length == 0 || lstOf1stLetter.length == 0) {
             return "";
         }
         HashMap<String, Integer> articles = new HashMap<>();

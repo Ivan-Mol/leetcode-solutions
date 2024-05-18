@@ -8,7 +8,7 @@ public interface WriteNumberInExpandedForm {
         StringBuilder res = new StringBuilder();
         String numString = Integer.toString(num);
         for (int i = 0; i < numString.length(); i++) {
-            if (numString.charAt(i)!='0') {
+            if (numString.charAt(i) != '0') {
                 System.out.println(numString.charAt(i));
                 res.append(numString.charAt(i));
                 for (int j = i; j < numString.length() - 1; j++) {

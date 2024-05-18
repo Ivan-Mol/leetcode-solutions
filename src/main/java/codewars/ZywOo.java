@@ -11,7 +11,7 @@ public interface ZywOo {
 //[-6, 32, 25]
     public static int[] multipleOfIndex(int[] array) {
         int counter = 1;
-        if (array[0]==0){
+        if (array[0] == 0) {
             counter = 2;
         }
         for (int i = 1; i < array.length; i++) {

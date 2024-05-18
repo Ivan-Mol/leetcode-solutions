@@ -1,8 +1,5 @@
 package codewars;
 
-import java.util.Arrays;
-import java.util.stream.Stream;
-
 public interface ScaledSquaredStrings {
     static String scale(String strng, int k, int v) {
         String[] words = strng.split("\n");

@@ -2,7 +2,7 @@ package alghoritms;
 
 public interface BinarySearch {
     //return index
-    static int binarySearch(Integer[] sortedArray, int element){
+    static int binarySearch(Integer[] sortedArray, int element) {
         // в начале левая и правая границы равны первому и последнему элементу массива
         var left = 0;
         var right = sortedArray.length - 1;

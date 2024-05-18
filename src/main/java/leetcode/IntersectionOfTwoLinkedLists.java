@@ -6,16 +6,16 @@ public interface IntersectionOfTwoLinkedLists {
     static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode frst = headA;
         ListNode scnd = headB;
-        while(frst!=scnd){
-            if(frst==null){
+        while (frst != scnd) {
+            if (frst == null) {
                 frst = headB;
-            }else{
-                frst=frst.next;
+            } else {
+                frst = frst.next;
             }
-            if(scnd==null){
+            if (scnd == null) {
                 scnd = headA;
-            }else{
-                scnd=scnd.next;
+            } else {
+                scnd = scnd.next;
             }
         }
         return frst;
