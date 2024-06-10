@@ -1,6 +1,7 @@
 package interviews;
 
 public interface DummyCalculator {
+    Integer getNum();
     static int dummyCalculator(String expr) {
         String[] arr = expr.split("\\+");
         int res = 0;

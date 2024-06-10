@@ -3,6 +3,7 @@ package interviews;
 import java.util.Arrays;
 
 public interface Flowers {
+    Integer getNum();
     static boolean canPlaceFlowers(int[] flowerbed, int n) {
         if (n == 0) {
             return true;
