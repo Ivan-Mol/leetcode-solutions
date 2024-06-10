@@ -31,7 +31,5 @@ public class ProducerConsumer {
         producerConsumer.consume();
         producerConsumer.produce("some string two");
         producerConsumer.consume();
-        String s = "http://localhost:8080/path/?name=ivan,lastname=mol";
-        System.out.println(s.substring(s.indexOf('=')+1));
     }
 }
