@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.ListNode;
+import nodes.ListNode;
 
 public interface LinkedListCyrcle {
     static boolean hasCycle(ListNode head) {

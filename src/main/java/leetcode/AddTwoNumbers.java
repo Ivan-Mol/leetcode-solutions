@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.ListNode;
+import nodes.ListNode;
 
 public interface AddTwoNumbers {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {

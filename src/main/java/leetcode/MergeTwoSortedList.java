@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.ListNode;
+import nodes.ListNode;
 
 public interface MergeTwoSortedList {
     static ListNode mergeTwoLists(ListNode list1, ListNode list2) {

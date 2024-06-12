@@ -8,19 +8,19 @@ import java.util.concurrent.Semaphore;
 @AllArgsConstructor
 public class PingPongSync implements Runnable {
     private String name;
-    private static final Semaphore semaphore = new Semaphore(2);
+    private static final Object MONITOR = new Object();
     private static int val = 0;
 
     @SneakyThrows
     public void doSomething() {
-        synchronized (semaphore) {
+        synchronized (MONITOR) {
             for (int i = 1; i <= 10; i++) {
                 System.out.println(name + " " + val++);
                 if (i % 2 == 0) {
-                    semaphore.wait();
+                    MONITOR.wait();
                 }
                 if (i % 2 != 0) {
-                    semaphore.notify();
+                    MONITOR.notify();
                 }
             }
         }
@@ -39,6 +39,5 @@ public class PingPongSync implements Runnable {
         Thread thread2 = new Thread(pingPongSync1);
         thread1.start();
         thread2.start();
-
     }
 }

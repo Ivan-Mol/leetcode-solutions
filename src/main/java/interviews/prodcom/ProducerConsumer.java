@@ -2,26 +2,23 @@ package interviews.prodcom;
 
 import lombok.SneakyThrows;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ProducerConsumer {
-    static List<String> strings = new ArrayList<>();
+    static Object[] objects = new Object[1];
 
     @SneakyThrows
     public synchronized void produce(String s) {
-        if (!strings.isEmpty()) {
+        if (objects[0] != null) {
             wait();
         }
-        strings.add(s);
+        objects[0]=s;
     }
 
     public synchronized void consume() {
-        if (strings.isEmpty()) {
+        if (objects[0]==null) {
             notify();
         }
-        System.out.println(strings.get(0));
-        strings.clear();
+        System.out.println(objects[0]);
+        objects[0]=null;
     }
 
 

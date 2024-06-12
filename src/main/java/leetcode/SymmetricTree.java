@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.TreeNode;
+import nodes.TreeNode;
 
 /**
  * Definition for a binary tree node.

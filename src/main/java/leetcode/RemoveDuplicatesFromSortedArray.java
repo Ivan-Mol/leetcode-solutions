@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.ListNode;
+import nodes.ListNode;
 
 public interface RemoveDuplicatesFromSortedArray {
     static ListNode deleteDuplicates(ListNode head) {

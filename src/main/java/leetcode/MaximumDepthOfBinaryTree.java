@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.TreeNode;
+import nodes.TreeNode;
 
 public interface MaximumDepthOfBinaryTree {
     static int maxDepth(TreeNode root) {

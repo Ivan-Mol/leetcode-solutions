@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.TreeNode;
+import nodes.TreeNode;
 
 public interface CountCompleteTreeNodes {
     static int countNodes(TreeNode root) {

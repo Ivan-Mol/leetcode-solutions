@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.TreeNode;
+import nodes.TreeNode;
 
 public interface SameTree {
     static boolean isSameTree(TreeNode p, TreeNode q) {

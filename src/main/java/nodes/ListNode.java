@@ -1,4 +1,4 @@
-package model;
+package nodes;
 
 public class ListNode {
     public int val;

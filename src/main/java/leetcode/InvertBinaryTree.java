@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.TreeNode;
+import nodes.TreeNode;
 
 public interface InvertBinaryTree {
     static TreeNode invertTree(TreeNode root) {

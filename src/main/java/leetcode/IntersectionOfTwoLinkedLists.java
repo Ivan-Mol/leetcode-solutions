@@ -1,6 +1,6 @@
 package leetcode;
 
-import model.ListNode;
+import nodes.ListNode;
 
 public interface IntersectionOfTwoLinkedLists {
     static ListNode getIntersectionNode(ListNode headA, ListNode headB) {

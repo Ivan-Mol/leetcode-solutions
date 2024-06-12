@@ -1,4 +1,4 @@
-package model;
+package nodes;
 
 import lombok.ToString;
 
